@@ -1,0 +1,13 @@
+﻿<Window x:Class="Mike.Arduino.AnalogReadSerial.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Lector Serial" Height="242" Width="525">
+    <Grid>
+        <ProgressBar Name="CurrentValueProgressBar" Height="27" Margin="50" VerticalAlignment="Top" Minimum="0" Maximum="1023"/>
+        <TextBlock Name="CurrentValueTextBlock" Margin="50,100,50,60" TextWrapping="Wrap" Text="Valor: 0"/>
+        <TextBlock HorizontalAlignment="Right" Margin="0,0,255,28" TextWrapping="Wrap" Text="Puerto:" VerticalAlignment="Bottom"/>
+       
+        <ComboBox Name="AvailablePortsComboBox" HorizontalAlignment="Right" Margin="0,0,130,25" Width="120" Height="22" VerticalAlignment="Bottom"/>
+        <Button Name="ConnectDisconnectButton" Content="Conectar" HorizontalAlignment="Right" Margin="0,0,50,25" VerticalAlignment="Bottom" Width="75" Click="ConnectDisconnectButton_Click"/>
+    </Grid>
+</Window>
